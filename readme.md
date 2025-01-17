@@ -1,6 +1,6 @@
-# TSP Algorithms Execution Script
+# TSP Algoritmos II
 
-Este repositório contém um script em Python para executar três algoritmos de resolução aproximada do Problema do Caixeiro Viajante (TSP) em lote sobre instâncias do TSPLIB. Os algoritmos implementados são:
+Este repositório contém um script em Python para executar três algoritmos de resolução, ótimos e aproximativos, do Problema do Caixeiro Viajante (TSP) em lote sobre instâncias do TSPLIB. Os algoritmos implementados são:
 
 - Branch-and-Bound (exato, com limite de tempo)
 - Twice Around the Tree (aproximação)
@@ -8,13 +8,13 @@ Este repositório contém um script em Python para executar três algoritmos de 
 
 ## Estrutura do Projeto
 
-- `scripts.py` (ou nome similar): Contém a implementação dos algoritmos, funções de parsing das instâncias TSP, execução em lote e escrita dos resultados em CSV.
+- `main.py`: Contém a implementação dos algoritmos, funções de parsing das instâncias TSP, execução em lote e escrita dos resultados em CSV.
 - `resultados.csv`: Arquivo gerado após a execução do script, contendo tempos e custos obtidos para cada instância e algoritmo.
-- Instâncias TSP no formato `.tsp` devem estar organizadas em uma pasta especificada.
+- Instâncias TSP no formato `.tsp` organizadas no diretório `instancias_tsp`
 
 ## Requisitos
 
-- Python 3.x
+- Python 3.11
 - Bibliotecas Python:
   - `networkx`
   - `matplotlib`
@@ -68,22 +68,19 @@ As bibliotecas matplotlib, pandas e seaborn foram utilizadas apenas para geraç�
 
 ### Execução do Script
 
-1. **Configuração do diretório de instâncias:**
-   - Atualize a variável `pasta` no bloco `if __name__ == "__main__":` para o caminho da pasta que contém as instâncias `.tsp`. Por exemplo:
-     ```python
-     pasta = "/caminho/para/instancias_tsp"
-     ```
-
-2. **Executar o script:**
+1. **Executar o script:**
    - No terminal, execute:
      ```bash
-     python scripts.py
+     python main.py
      ```
    - O script processará cada instância encontrada na pasta especificada, executará os algoritmos e salvará os resultados em `resultados.csv`.
 
-3. **Verificar resultados:**
+2. **Verificar resultados:**
    - Após a execução, abra o arquivo `resultados.csv` para revisar os tempos e custos obtidos para cada instância e algoritmo.
-
+  
+3. **Soluções ótimas**
+   - Se encontram no csv `otimos.csv`
+   
 ## Notas e Considerações
 
 - **Limite de Tempo:** 
