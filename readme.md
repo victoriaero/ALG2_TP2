@@ -1,5 +1,9 @@
 # TSP Algoritmos II
 
+## Alunos:
+- Samira Malaquias: 2022107580
+- Victoria Estanislau: 2021037490
+
 Este repositório contém um script em Python para executar três algoritmos de resolução, ótimos e aproximativos, do Problema do Caixeiro Viajante (TSP) em lote sobre instâncias do TSPLIB. Os algoritmos implementados são:
 
 - Branch-and-Bound (exato, com limite de tempo)
